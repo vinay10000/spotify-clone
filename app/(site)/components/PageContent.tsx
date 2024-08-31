@@ -6,7 +6,6 @@ import { Song } from "@/types"
 
 interface PageContentProps {
     songs: Song[]
-    onSongClick: (song: Song) => void
 }
 
 const PageContent: React.FC<PageContentProps> = ({ songs, onSongClick }) => {
