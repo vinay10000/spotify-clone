@@ -8,7 +8,7 @@ interface PageContentProps {
     songs: Song[]
 }
 
-const PageContent: React.FC<PageContentProps> = ({ songs, onSongClick }) => {
+const PageContent: React.FC<PageContentProps> = ({ songs }) => {
     const onPlay  = useOnPlay(songs)
     if (songs.length === 0) {
         return (
